@@ -1,2 +1,2 @@
 # insight
-front-end for business intelligence
+dataset for business intelligence

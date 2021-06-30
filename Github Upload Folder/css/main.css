@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*--- page ---*/
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #f2e6d8;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*--- navigation bar ---*/
+
+.navbar {
+	background: #d10d32;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #fff;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	color: #000;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+/*--- header ---*/
+
+.header {
+	/*background-image: url('images/header-background.jpg');*/
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: #fff;
+}
+
+.description p {
+	color: #c7c7c7;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.description button {
+	margin-top: 16px;
+	border: 1px solid #1b65a6;
+	background: #1b65a6;
+	border-radius: 0;
+	color: #fff;
+}
+
+.description button:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+/*--- feature section ---*/
+
+.features {
+	margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.features img {
+	height: 300px;
+	width: 400px;
+	-webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+
+.features .btn {
+	background-color: #1b65a6;
+	border: 1px solid #1b65a6;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.features .btn:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+/*--- team section ---*/
+
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+/*--- footer ---*/
+
+.page-footer {
+	background-color: #222;
+	color: #ccc;
+	padding: 60px 0 30px;
+}
+
+.footer-copyright {
+	color: #666;
+	padding: 40px 0;
+}
+
+/*---about ---*/
+
+.background .input-group {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*--- media queries ---*/
+
+@media (max-width: 991.98px) {
+
+	.team {
+		padding: 0 15px;
+	}
+	
+}
+
+@media (max-width: 575.98px) {
+
+	.description {
+		left: 0;
+		padding: 0 15px;
+		position: absolute;
+		top: 10%;
+		transform: none;
+		text-align: center;
+	}
+	
+	.description h1 {
+		font-size: 2em;
+	}
+	
+	.description p {
+		font-size: 1.2rem;
+	}
+	
+	.features {
+		margin: 0;
+	}
+	
+	.team {
+		max-width: 60%;
+	}
+	
+	#demo-modal .btn {
+		min-width: auto;
+	}
+
+}
